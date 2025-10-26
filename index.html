@@ -335,7 +335,7 @@
                     <div class="news-card">
                         <h3>Article de Presse</h3>
                         <p>Découvrez notre dernière publication dans la presse spécialisée.</p>
-                        <a href="#" target="_blank">Lire l'article →</a>
+                        <a href="https://www.echodumardi.com/economie/il-faut-etre-un-inventeur-pour-durer-le-marketing-ne-suffit-pas-jean-marc-gialis/" target="_blank">Lire l'article →</a>
                     </div>
 
                     <div class="news-card">
@@ -364,7 +364,7 @@
                 <h2>Contact</h2>
                 <p style="text-align: center; margin-bottom: 40px;">Vous avez un projet ? Contactez-nous pour en discuter.</p>
                 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mjkpvnje" method="POST">
                     <div class="form-group">
                         <label for="nom">Nom *</label>
                         <input type="text" id="nom" name="nom" required>
@@ -385,6 +385,10 @@
                         <textarea id="message" name="message" required></textarea>
                     </div>
 
+                    <!-- Champ caché pour éviter le spam -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis Act For Talents">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <button type="submit" class="btn">Envoyer</button>
                 </form>
             </div>
@@ -398,10 +402,8 @@
     </footer>
 
     <script>
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message ! (Formulaire non connecté)');
-        });
+        // Le formulaire est maintenant géré par Formspree
+        // Pas besoin de JavaScript supplémentaire
     </script>
 </body>
 </html>
