@@ -232,6 +232,71 @@
             resize: vertical;
         }
 
+        .history-section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #1A1A1A;
+            border-radius: 8px;
+            border-left: 4px solid #F2D300;
+        }
+
+        .history-section h3 {
+            color: #F2D300;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .history-section p {
+            margin-bottom: 20px;
+            line-height: 1.9;
+            font-size: 17px;
+            color: #CCCCCC;
+        }
+
+        .products-section {
+            max-width: 900px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .products-section h3 {
+            color: #F2D300;
+            margin-bottom: 15px;
+        }
+
+        .products-section > p {
+            margin-bottom: 30px;
+            color: #CCCCCC;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background-color: #1A1A1A;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #F2D300;
+            transform: translateY(-5px);
+        }
+
+        .product-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -298,7 +363,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Act For Talents Logo" class="logo">
+            <img src="logo.jfif" alt="Act For Talents Logo" class="logo">
         </div>
         <nav>
             <ul>
@@ -319,7 +384,29 @@
                     <img src="Photo_JGS.jfif" alt="Jean-Marc Gialis" class="profile-photo">
                     <div class="profile-text">
                         <h3>Jean-Marc Gialis</h3>
-                        <p>Expert en innovation et développement produit avec plus de 38 ans d'expérience dans l'accompagnement des entreprises vers l'excellence opérationnelle et la croissance stratégique.</p>
+                        <p>Expert en innovation et développement produit avec plus de 20 ans d'expérience dans l'accompagnement des entreprises vers l'excellence opérationnelle et la croissance stratégique.</p>
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <h3>Parcours de Jean-Marc Gialis</h3>
+                    <p>Passionné à la fois par le dessin industriel et par la mécanique transmise par son père, Jean-Marc Gialis s’oriente vers la conception mécanique et obtient un BTS dans cette spécialité. Il rejoint en 1986 le groupe Pellenc, alors en pleine structuration de son activité d’innovation. D’abord concepteur au bureau d’études, il participe notamment au développement de la machine à vendanger qui deviendra l’un des leviers majeurs de la croissance du groupe.</p>
+                    
+                    <p>Son parcours au sein de Pellenc illustre une progression continue dans les fonctions de pilotage de l’innovation et de la stratégie industrielle. Il prend successivement la direction du bureau d’études, puis de la R&D, avant d’occuper les postes de directeur général adjoint puis directeur général, tout en conservant la responsabilité de la recherche et du développement. L’entreprise atteint alors une dimension internationale, avec 21 sociétés, 2 000 collaborateurs et un chiffre d’affaires de 345 M€ en 2022.</p>
+                    
+                    <p>Fort de cette expérience opérationnelle complète, Jean-Marc accompagne aujourd’hui les entreprises dans leurs démarches d’innovation, de développement produit et d’industrialisation, en mettant au service de leurs projets une expertise éprouvée du passage de l’idée au marché.</p>  
+                </div>
+
+                <div class="products-section">
+                    <h3>Réalisations Pellenc</h3>
+                    <p>Quelques produits emblématiques auxquels Jean-Marc a contribué :</p>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="pellenc-produit1.jpg" alt="Produit Pellenc 1" class="product-photo">
+                        </div>
+                        <div class="product-card">
+                            <img src="pellenc-produit2.jpg" alt="Produit Pellenc 2" class="product-photo">
+                        </div>
                     </div>
                 </div>
 
@@ -335,7 +422,7 @@
                     <div class="news-card">
                         <h3>Article de Presse</h3>
                         <p>Découvrez notre dernière publication dans la presse spécialisée.</p>
-                        <a href="https://www.echodumardi.com/economie/il-faut-etre-un-inventeur-pour-durer-le-marketing-ne-suffit-pas-jean-marc-gialis/" target="_blank">Lire l'article →</a>
+                        <a href="#" target="_blank">Lire l'article →</a>
                     </div>
 
                     <div class="news-card">
@@ -364,7 +451,7 @@
                 <h2>Contact</h2>
                 <p style="text-align: center; margin-bottom: 40px;">Vous avez un projet ? Contactez-nous pour en discuter.</p>
                 
-                <form class="contact-form" action="https://formspree.io/f/mjkpvnje" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
                     <div class="form-group">
                         <label for="nom">Nom *</label>
                         <input type="text" id="nom" name="nom" required>
